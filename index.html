@@ -16,104 +16,8 @@
 </head>
 
 <body>
-    <main>
-        <!-- find-a-class div  -->
-        <div class="wrapper" id="wrapper-id">
-            <div class="text-div">
-                <h2 class="red-cross-text">RED CROSS TRAINING FOR INDIVIDUALS</h2>
-                <h1 class="get-trained-text">Get Trained.<br> Act with Confidence.</h1>
-                <h3 class="view-online-text">Want self-paced classes taken online? <span class="view-span">View Online
-                        Classes.</span></h3>
-            </div>
-            <div class="form-div">
-                <p class="validation-text d-none">Please select a course category, location and format before searching.</p>
-                <form class="find-a-class">
-                    <div class="location-section">
-                        <img class="location-icon" src="./images/Map Marker Alt Icon.svg">
-                        <span class="location-text">Find a Class in</span>
-                        <a class="location-address" href="#">New Heaven. CT</a>
-                    </div>
-                    <div class="select-container">
-                        <div class="common-class">
-                            <div class="dropdown-div choose-a-class" id="dropdown-div-id">
-                                <div class="class-dropdown" id="class-dropdown-id">
-                                    Choose a Class
-                                </div>
-                                <img class="carrot-img" id="carrot-img-id" src="./carrot.png" alt="cannot load">
-                            </div>
-                            <div class="options-div" id="options-div-id">
-                                <div class="options">CPR</div>
-                                <div class="options">AED</div>
-                                <div class="options">First Aid</div>
-                            </div>
-                            <div class="dropdown-div-two" id="dropdown-div-two-id">
-                                <div class="class-dropdown-two" id="class-dropdown-two-id">
-                                    All Formats
-                                </div>
-                                <img class="carrot-img" id="carrot-img-two-id" src="./carrot.png" alt="cannot load">
-                                <div class="options-div-two" id="options-div-two-id">
-                                    <div class="options-two">Online Only</div>
-                                    <div class="options-two">In-person</div>
-                                    <div class="options-two">Blended (Online + In-person)</div>
-                                </div>
-                            </div>
-                          
-                            <div class="div-p-mobile">
-                                <p class="about-class-format align-right">About class formats</p>
-                            </div>
-                            <button class="show-btn" id="show-btn-id" type="button">
-                                <span class="btn-span"> SHOW CLASSES</span>
-                                <picture>
-                                    <source media="(min-width:321px)" srcset="./Arrow-desktop.png">
-                                    <source media="(max-width:321px)" srcset="./Arrow-mobile.png">
-                                    <img class="arrow-img" src="./Arrow-mobile.png" alt="Flowers" >
-                                </picture>
-                               
-                            </button>
-                        </div>
-                        <div class="div-p d-none">
-                            <p id='about-class-format-id' class="about-class-format">About class formats</p>
-                        </div>
-                    </div>
-                   
-                </form>
-            </div>
-        </div>
-        <!-- modal div -->
-        
-        <!-- your location div -->
-        <div class="your-location d-none">
-            <div class="close-btn">
-                <img src="./close-btn.svg" alt="cannot load image">
-            </div>
-            <div class="your-location-div">
-                <h2 class="your-location-heading">Your Location</h2>
-                <div class="your-location-text">
-                    <p class="enter-your-location">Enter your location to display the training schedule in your area.</p>
-                    <form class="your-location-form">
-                        <div class="your-location-form-div">
-                            <div class="zipcode-img-div">
-                                <img class="zipcode-img" src="./zipcode-mobile.png" alt="cannot load image">
-                            </div>
-                            <input type="text" id="location-id" name="location-label">
-                        </div>
-                        <div class="find-img-div">
-                            <img class="find-img" src="./find-mobile.png" alt="cannot load image">
-                        </div>
-                        <div class="distance-dropdown-div">
-                            <div class="distance-dropdown">
-                                Within 25 miles
-                            </div>
-                          <img class="carrot-img" src="./carrot.svg" alt="cannot load image">
-                            
-                        </div>
-                       <button type="submit" class="search-btn">SEARCH</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-    <div id="modal-id" class="d-none">
+     <!-- modal div -->
+     <div id="modal-id" class="d-none">
         <div class="modal modal-container" id="modal-container-id">
             <div class="close-btn">
                 <img src="./close-btn.svg" id="close-btn-id" alt="cannot load image">
@@ -175,6 +79,106 @@
             </div>
         </div>
     </div>
+    <main>
+        <!-- find-a-class div  -->
+        <div class="wrapper" id="wrapper-id">
+            <div class="text-div">
+                <h2 class="red-cross-text">RED CROSS TRAINING FOR INDIVIDUALS</h2>
+                <h1 class="get-trained-text">Get Trained.<br> Act with Confidence.</h1>
+                <h3 class="view-online-text">Want self-paced classes taken online? <span class="view-span">View Online
+                        Classes.</span></h3>
+            </div>
+            <div class="form-div">
+                <p class="validation-text d-none">Please select a course category, location and format before searching.</p>
+                <form class="find-a-class">
+                    <div class="location-section">
+                        <img class="location-icon" src="./images/Map Marker Alt Icon.svg">
+                        <span class="location-text">Find a Class in</span>
+                        <a class="location-address" href="#">New Heaven. CT</a>
+                    </div>
+                    <div class="select-container">
+                        <div class="common-class">
+                            <div class="dropdown-div choose-a-class" id="dropdown-div-id">
+                                <div class="class-dropdown" id="class-dropdown-id">
+                                    Choose a Class
+                                </div>
+                                <img class="carrot-img" id="carrot-img-id" src="./carrot.png" alt="cannot load">
+                            </div>
+                            <div class="options-div" id="options-div-id">
+                                <div class="options">CPR</div>
+                                <div class="options">AED</div>
+                                <div class="options">First Aid</div>
+                            </div>
+                            <div class="dropdown-div-two" id="dropdown-div-two-id">
+                                <div class="dropdown-div-two-container" id="dropdown-div-two-container-id">
+                                    <div class="class-dropdown-two" id="class-dropdown-two-id">
+                                        All Formats
+                                    </div>
+                                    <img class="carrot-img" id="carrot-img-two-id" src="./carrot.png" alt="cannot load">
+                                </div>
+                                <div class="options-div-two" id="options-div-two-id">
+                                    <div class="options-two">Online Only</div>
+                                    <div class="options-two">In-person</div>
+                                    <div class="options-two">Blended (Online + In-person)</div>
+                                </div>
+                            </div>
+                          
+                            <div class="div-p-mobile">
+                                <p class="about-class-format align-right">About class formats</p>
+                            </div>
+                            <button class="show-btn" id="show-btn-id" type="button">
+                                <span class="btn-span"> SHOW CLASSES</span>
+                                <picture>
+                                    <source media="(min-width:321px)" srcset="./Arrow-desktop.png">
+                                    <source media="(max-width:321px)" srcset="./Arrow-mobile.png">
+                                    <img class="arrow-img" src="./Arrow-mobile.png" alt="Flowers" >
+                                </picture>
+                               
+                            </button>
+                        </div>
+                        <div class="div-p d-none">
+                            <p id='about-class-format-id' class="about-class-format">About class formats</p>
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+        
+        
+        <!-- your location div -->
+        <div class="your-location d-none">
+            <div class="close-btn">
+                <img src="./close-btn.svg" alt="cannot load image">
+            </div>
+            <div class="your-location-div">
+                <h2 class="your-location-heading">Your Location</h2>
+                <div class="your-location-text">
+                    <p class="enter-your-location">Enter your location to display the training schedule in your area.</p>
+                    <form class="your-location-form">
+                        <div class="your-location-form-div">
+                            <div class="zipcode-img-div">
+                                <img class="zipcode-img" src="./zipcode-mobile.png" alt="cannot load image">
+                            </div>
+                            <input type="text" id="location-id" name="location-label">
+                        </div>
+                        <div class="find-img-div">
+                            <img class="find-img" src="./find-mobile.png" alt="cannot load image">
+                        </div>
+                        <div class="distance-dropdown-div">
+                            <div class="distance-dropdown">
+                                Within 25 miles
+                            </div>
+                          <img class="carrot-img" src="./carrot.svg" alt="cannot load image">
+                            
+                        </div>
+                       <button type="submit" class="search-btn">SEARCH</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+   
 </body>
 
 </html>
