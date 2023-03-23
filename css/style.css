@@ -485,6 +485,7 @@ a.location-address {
   }
 
   .dropdown-div {
+    min-width: 163px;
     max-width: 220px;
     margin: 0;
   }
@@ -495,6 +496,7 @@ a.location-address {
 
   .dropdown-div-two {
     max-width: 220px;
+    min-width: 163px;
     width: 100%;
     margin: 0;
   }
