@@ -150,40 +150,49 @@
   letter-spacing: var(--unnamed-character-spacing-0-1);
   color: var(--unnamed-color-000000);
 }
+
 body {
   background: #000000 0% 0% no-repeat padding-box;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
 main {
   position: relative;
 }
+
 .wrapper {
   margin: 13% 4.7% 0 4.7%;
   position: relative;
 }
+
 .wrapper-blur {
   background: #000000;
   opacity: 80%;
 }
+
 .d-none {
   display: none;
 }
+
 .d-block {
   display: block;
 }
+
 .red-cross-text {
   font: normal normal normal 20px/24px Roboto;
   letter-spacing: 1px;
   color: #ED1B2E;
   margin: 14% 0 0 0;
 }
+
 .get-trained-text {
   font: normal normal bold 40px/48px Roboto;
   letter-spacing: 1.2px;
   color: #FFFFFF;
   margin: 0;
 }
+
 .view-online-text {
   color: var(---d7d7d8);
   text-align: left;
@@ -191,9 +200,11 @@ main {
   letter-spacing: 0.32px;
   margin: 0 0 30px;
 }
+
 .view-span {
   text-decoration: underline;
 }
+
 .find-a-class {
   background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
   border: 1px solid rgba(255, 255, 255, 0.3490196078);
@@ -202,10 +213,12 @@ main {
   padding: 4.2% 5.5%;
   font-family: 'Mulish', sans-serif;
 }
+
 .location-section {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-muli);
   display: flex;
 }
+
 .location-text {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-muli);
   letter-spacing: var(--unnamed-character-spacing-0-32);
@@ -214,6 +227,7 @@ main {
   letter-spacing: 0.32px;
   margin-left: 5px;
 }
+
 a.location-address {
   text-decoration: underline;
   color: #FFFFFF;
@@ -221,13 +235,16 @@ a.location-address {
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0.32px;
 }
+
 .common-class {
   display: block;
 }
+
 .div-p {
   padding: 3px 0 0 0;
   margin: 0;
 }
+
 .class-dropdown {
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0.32px;
@@ -237,9 +254,10 @@ a.location-address {
   white-space: nowrap;
   width: 100%;
   box-sizing: border-box;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   overflow: hidden;
 }
+
 .class-dropdown-two {
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0.32px;
@@ -250,9 +268,10 @@ a.location-address {
   white-space: nowrap;
   width: 100%;
   box-sizing: border-box;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   overflow: hidden;
 }
+
 .dropdown-div {
   display: flex;
   justify-content: space-between;
@@ -260,6 +279,7 @@ a.location-address {
   width: 100%;
   background: white;
 }
+
 .dropdown-div-two-container {
   margin-top: 15px;
   display: flex;
@@ -267,16 +287,24 @@ a.location-address {
   align-items: center;
   width: 100%;
   background: white;
-
 }
+
+.arrow-image-div {
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .carrot-img {
   width: 32px;
   color: #ACACAC;
-  padding-right: 5px;
 }
+
 .class-format-div {
   position: relative;
 }
+
 .class-format {
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0.32px;
@@ -286,6 +314,7 @@ a.location-address {
   align-items: center;
   background: white;
 }
+
 .about-class-format {
   margin: 0;
   text-decoration: underline;
@@ -295,12 +324,15 @@ a.location-address {
   padding-right: 11%;
   cursor: pointer;
 }
+
 #close-btn-id {
   cursor: pointer;
 }
+
 .class-format option {
   margin-left: 10px;
 }
+
 .show-btn {
   padding: 5%;
   border: 0;
@@ -311,178 +343,220 @@ a.location-address {
   width: 100%;
   justify-content: space-between;
 }
+
 .btn-span {
   font: normal normal bold 19px/18px Roboto;
   letter-spacing: 0.37px;
 }
+
 .arrow-img {
   margin-left: 50px;
   display: flex;
 }
+
 .div-p-mobile {
   padding: 5px 0;
   display: flex;
   justify-content: end;
 }
+
 .align-right {
   padding-right: 4%;
 }
+
 .select-container {
   margin: 15.9px 0 0 0;
 }
+
 .options {
   padding: 5%;
   background-color: white;
   border: 1px solid lightgrey;
 }
+
 .options-two {
   padding: 5%;
   background-color: white;
   border: 1px solid lightgrey;
 }
+
 .margin-none {
   margin: 0;
 }
+
 .options-div-two,
 .options-div {
   cursor: pointer;
   display: none;
 }
+
 .options-div-two:hover {
   background-color: #D7D7D8;
 }
+
 .options:hover {
   background-color: #D7D7D8;
 }
+
 .options-two:hover {
   background-color: #D7D7D8;
 }
+
 .rotate {
   transform: rotate(180deg);
-  padding-left: 5px;
 }
+
 /* desktop styling */
 @media only screen and (min-width: 1024px) {
   .wrapper {
     margin: 0 9.4%;
   }
+
   .red-cross-text {
     margin: 17% 0 0 0;
   }
+
   .get-trained-text {
     font: normal normal bold 50px/66px Roboto;
     letter-spacing: 1.5px;
   }
+
   .find-a-class {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
   }
+
   .common-class {
     display: flex;
     flex-direction: row;
   }
+
   .view-online-text {
     font: normal normal normal 20px/28px Roboto;
     letter-spacing: 0.1px;
   }
+
   .location-section {
     display: flex;
   }
+
   .select-container {
     width: 62%;
     margin: 24px 0 0 20px;
   }
+
   .location-text {
     margin-left: 10px;
   }
+
   .class-dropdown {
     margin: 0;
   }
+
   .options-div {
     overflow: auto;
   }
+
   .options-div-two {
     overflow: auto
   }
+
   .options {
     padding: 5%;
     background-color: white;
   }
+
   .options-two {
     padding: 5%;
     background-color: white;
   }
+
   .class-format {
     margin: 0;
     padding: 11px 37px;
   }
+
   .class-format-div {
     width: 45%;
     max-width: 220px;
     margin-left: 20px;
   }
+
   .dropdown-div {
     max-width: 220px;
-    width: 31%;
     margin: 0;
   }
+
   .dropdown-div-two-container {
     margin: 0;
   }
+
   .dropdown-div-two {
     max-width: 220px;
-    width: 31%;
+    width: 100%;
     margin: 0;
   }
+
   .show-btn {
     justify-content: space-around;
     margin-left: 20px;
     padding: 0;
     max-width: 220px;
-    width: 66%;
   }
+
   .btn-span {
     margin: 0;
   }
+
   .arrow-img {
     margin: 0;
     display: block;
     width: 61%;
   }
+
   .div-p-mobile {
     display: none;
   }
+
   .div-p {
     display: block;
   }
+
   .choose-a-class {
     margin-right: 20px;
   }
+
   .options-div {
     position: absolute;
     top: 93%;
   }
+
   .options-div-two {
     position: absolute;
   }
+
   .options {
     border-bottom: 1px solid #D7D7D8;
   }
+
   .options-two {
     border-bottom: 1px solid #D7D7D8;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 769px) {
-}
+
+@media only screen and (min-width: 321px) and (max-width: 769px) {}
+
 /* modal styling mobile with screen width 320px*/
 .close-btn {
   text-align: end;
 }
+
 .heading-margin-none {
   margin: 0;
 }
+
 #modal-id {
   position: absolute;
   top: 0;
@@ -490,6 +564,7 @@ a.location-address {
   box-sizing: border-box;
   z-index: 1;
 }
+
 .modal {
   padding: 4.7%;
   margin-bottom: 20px;
@@ -497,73 +572,90 @@ a.location-address {
   width: 100%;
   box-sizing: border-box;
 }
+
 .img-div {
   text-align: center;
   margin-top: 20px;
 }
+
 .m-zero {
   margin: 0;
 }
+
 .heading-text-modal {
   width: 50%;
 }
+
 .p-twenty {
   padding-left: 17px;
 }
+
 .ul-heading {
   margin-top: 5px;
 }
+
 .validation-text {
   color: red;
   margin-top: 0;
 }
+
 /*  modal styling for desktop with screen width 1920px*/
 @media only screen and (min-width: 1024px) {
   .modal {
     margin: 0 auto;
-    background-color:white;
+    background-color: white;
     max-width: 882px;
     width: 100%;
     padding: 0;
     padding-bottom: 4%;
   }
+
   #modal-id {
     position: absolute;
     left: 0;
     width: 100%;
     top: 9%;
   }
+
   .modal-text {
     margin: 2% 7.2%;
   }
+
   .online {
     display: flex;
     margin-bottom: 6.7%;
   }
+
   .online-plus-inperson {
     display: flex;
     margin-bottom: 6.7%;
   }
+
   .inperson {
     display: flex;
     margin-bottom: 6.7%;
   }
+
   .heading-text-modal {
     width: unset;
   }
+
   .heading-text-modal-h2 {
     font: normal normal bold 36px/48px Roboto;
     letter-spacing: 1.08px;
     margin-bottom: 3.2%;
   }
+
   .ul-heading-font {
     font: normal normal bold 20px/28px Roboto;
     letter-spacing: 0.1px;
   }
+
   .ul-heading {
     font: normal normal normal 16px/22px Muli;
     letter-spacing: 0.32px;
   }
+
   .img-div {
     margin: 0 20px 0 0;
   }
