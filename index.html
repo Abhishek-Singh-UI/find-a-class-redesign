@@ -92,9 +92,9 @@
                 <p class="validation-text d-none">Please select a course category, location and format before searching.</p>
                 <form class="find-a-class">
                     <div class="location-section">
-                        <img class="location-icon" src="./images/Map Marker Alt Icon.svg">
+                        <img id="location-icon-id" class="location-icon" src="./images/Map Marker Alt Icon.svg">
                         <span class="location-text">Find a Class in</span>
-                        <a class="location-address" href="#">New Heaven. CT</a>
+                        <a id="location-address-id" class="location-address" href="#">New Heaven. CT</a>
                     </div>
                     <div class="select-container">
                         <div class="common-class">
@@ -121,6 +121,7 @@
                                     </div>
                                 </div>
                                 <div class="options-div-two" id="options-div-two-id">
+                                    <div class="options-two">All Formats</div>
                                     <div class="options-two">Online Only</div>
                                     <div class="options-two">In-person</div>
                                     <div class="options-two">Blended (Online + In-person)</div>
@@ -151,9 +152,9 @@
         
         
         <!-- your location div -->
-        <div class="your-location d-none">
-            <div class="close-btn">
-                <img src="./close-btn.svg" alt="cannot load image">
+        <div class="your-location d-none" id="location-id">
+            <div class="close-btn" > 
+                <img id="location-close-btn-id" src="./close-btn.svg" alt="cannot load image">
             </div>
             <div class="your-location-div">
                 <h2 class="your-location-heading">Your Location</h2>
@@ -169,13 +170,24 @@
                         <div class="find-img-div">
                             <img class="find-img" src="./find-mobile.png" alt="cannot load image">
                         </div>
-                        <div class="distance-dropdown-div">
-                            <div class="distance-dropdown">
-                                Within 25 miles
+                        <!-- <div class="distance-div"> -->
+                            <div class="distance-dropdown-div" id="distance-dropdown-div-id">
+                                <div class="distance-dropdown">
+                                    Within 25 miles
+                                </div>
+                              <img id="carrot-img-id-three" class="carrot-img" src="./carrot.svg" alt="cannot load image">
+                                
                             </div>
-                          <img class="carrot-img" src="./carrot.svg" alt="cannot load image">
-                            
-                        </div>
+                            <div class="options-div-three d-none" id="options-div-three-id">
+                                <div class="options-three">Within 5 Miles</div>
+                                <div class="options-three">Within 10 Miles</div>
+                                <div class="options-three">Within 15 Miles</div>
+                                <div class="options-three">Within 20 Miles</div>
+                                <div class="options-three">Within 25 Miles</div>
+                            </div>
+                        <!-- </div> -->
+                        
+                        
                        <button type="submit" class="search-btn">SEARCH</button>
                     </form>
                 </div>

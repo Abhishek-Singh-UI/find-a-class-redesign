@@ -162,7 +162,7 @@ main {
 }
 
 .wrapper {
-  margin: 13% 4.7% 0 4.7%;
+  padding: 13% 4.7% 0 4.7%;
   position: relative;
 }
 
@@ -183,7 +183,7 @@ main {
   font: normal normal normal 20px/24px Roboto;
   letter-spacing: 1px;
   color: #ED1B2E;
-  margin: 14% 0 0 0;
+  margin: 0;
 }
 
 .get-trained-text {
@@ -194,7 +194,7 @@ main {
 }
 
 .view-online-text {
-  color: var(---d7d7d8);
+  color: #D7D7D8;
   text-align: left;
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0.32px;
@@ -222,7 +222,7 @@ main {
 .location-text {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-muli);
   letter-spacing: var(--unnamed-character-spacing-0-32);
-  color: var(---ffffff);
+  color: #FFFFFF;
   font: normal normal bold 16px/22px Muli;
   letter-spacing: 0.32px;
   margin-left: 5px;
@@ -268,7 +268,6 @@ a.location-address {
   white-space: nowrap;
   width: 100%;
   box-sizing: border-box;
-  /* text-overflow: ellipsis; */
   overflow: hidden;
 }
 
@@ -410,145 +409,116 @@ a.location-address {
 @media only screen and (min-width: 1024px) {
   .wrapper {
     margin: 0 9.4%;
+    padding: 0;
   }
-
   .red-cross-text {
     margin: 17% 0 0 0;
   }
-
   .get-trained-text {
     font: normal normal bold 50px/66px Roboto;
     letter-spacing: 1.5px;
   }
-
   .find-a-class {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
   }
-
   .common-class {
     display: flex;
     flex-direction: row;
   }
-
   .view-online-text {
     font: normal normal normal 20px/28px Roboto;
     letter-spacing: 0.1px;
   }
-
   .location-section {
     display: flex;
   }
-
   .select-container {
     width: 62%;
     margin: 24px 0 0 20px;
   }
-
   .location-text {
     margin-left: 10px;
   }
-
   .class-dropdown {
     margin: 0;
   }
-
   .options-div {
     overflow: auto;
   }
-
   .options-div-two {
     overflow: auto
   }
-
   .options {
     padding: 5%;
     background-color: white;
   }
-
   .options-two {
     padding: 5%;
     background-color: white;
   }
-
   .class-format {
     margin: 0;
     padding: 11px 37px;
   }
-
   .class-format-div {
     width: 45%;
     max-width: 220px;
     margin-left: 20px;
   }
-
   .dropdown-div {
     min-width: 163px;
     max-width: 220px;
     margin: 0;
   }
-
   .dropdown-div-two-container {
     margin: 0;
   }
-
   .dropdown-div-two {
     max-width: 220px;
     min-width: 163px;
     width: 100%;
     margin: 0;
   }
-
   .show-btn {
     justify-content: space-around;
     margin-left: 20px;
     padding: 0;
     max-width: 220px;
   }
-
   .btn-span {
     margin: 0;
   }
-
   .arrow-img {
     margin: 0;
     display: block;
     width: 61%;
   }
-
   .div-p-mobile {
     display: none;
   }
-
   .div-p {
     display: block;
   }
-
   .choose-a-class {
     margin-right: 20px;
   }
-
   .options-div {
     position: absolute;
     top: 93%;
   }
-
   .options-div-two {
     position: absolute;
   }
-
   .options {
     border-bottom: 1px solid #D7D7D8;
   }
-
   .options-two {
     border-bottom: 1px solid #D7D7D8;
   }
 }
-
-@media only screen and (min-width: 321px) and (max-width: 769px) {}
 
 /* modal styling mobile with screen width 320px*/
 .close-btn {
@@ -691,18 +661,21 @@ a.location-address {
 
 .distance-dropdown-div {
   position: relative;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  border: 1px solid grey;
+  align-items: center;
 }
 
 .distance-dropdown {
   font: normal normal normal 16px/22px Muli;
   letter-spacing: 0;
-  padding: 5%;
+  padding: 4.5%;
   display: flex;
   align-items: center;
   background: white;
   word-break: break-all;
-  border: 1px solid grey;
 }
 
 .your-location-form-div input {
@@ -713,6 +686,14 @@ a.location-address {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid grey;
+  background-color: white;
+}
+.your-location {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  overflow: auto;
 }
 
 .find-img-div {
@@ -729,6 +710,7 @@ a.location-address {
   color: white;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .find-img-div {
@@ -738,13 +720,30 @@ a.location-address {
 .enter-your-location {
   margin-bottom: 30px;
 }
+#location-close-btn-id {
+  cursor: pointer;
+}
+.distance-div {
+  position: relative;
+}
+.options-three {
+  padding: 5%;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
 
 /* your location div styling for desktop with screen size 1920px*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .your-location {
     max-width: 882px;
     text-align: center;
-    background-color: aqua;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: -17%;
+    right: 2%;
+    height: unset;
   }
 
   .your-location-div {
@@ -769,13 +768,20 @@ a.location-address {
 
   .distance-dropdown-div {
     width: 31%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid grey;
+    justify-content: space-between;
+    max-width: 186px;
+    padding: 0;
   }
 
   #location-id {
     width: unset;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
   }
-
   .your-location-form-div input {
     padding: 2%;
   }
@@ -786,12 +792,18 @@ a.location-address {
     padding: 2%;
     width: 31%;
     margin-bottom: 38px;
+    margin-top: 20px;
   }
 
   .find-img-div {
     justify-content: unset;
-    margin-left: 51%;
+    margin-left: 50%;
     margin-bottom: 15px;
   }
-
+  .your-location-form-div input {
+    max-width: 186px;
+  }
+  .options-div-three {
+    margin: 0 auto;
+  }
 }
